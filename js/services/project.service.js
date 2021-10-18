@@ -32,7 +32,7 @@ function _createProject(
   title = 'Unknown',
   desc = '',
   url = '#',
-  labels = [],
+  labels = ['kaka', 'pipi', 'laflaf', 'lamlam'],
   category = 'no category'
 ) {
   return {

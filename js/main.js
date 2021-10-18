@@ -22,6 +22,7 @@ function renderProjects() {
                 <div class="portfolio-caption">
                     <h4>${proj.title}</h4>
                     <p class="text-muted">${proj.category}</p>
+                    ${renderBadges(proj)}
                 </div>
             </div>`;
   });
@@ -42,6 +43,7 @@ function renderProjModals(proj) {
                     <li>ID: ${proj.id}</li>
                     <li>Date: ${proj.publishedAt}</li>
                     <li>Category: ${proj.category}</li>
+                    <li>${renderBadges(proj)}</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -50,6 +52,13 @@ function renderProjModals(proj) {
                 </div>`;
 
   $('.modal-body').html(strHTML);
+}
+
+function renderBadges(proj) {
+  var strHTML = proj.labels.map(function (lable) {
+    return `<span class="badge badge-secondary bg-danger mr-1">${lable}</span>`;
+  });
+  return strHTML.join('');
 }
 
 function onOpenModal(ev) {

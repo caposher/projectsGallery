@@ -7,6 +7,10 @@ function getProjects() {
   return gProjects;
 }
 
+function getProjInfo(idx) {
+  return gProjects[idx];
+}
+
 //private functions -------------------------------------------------------------
 function _createProjects() {
   gProjects = loadFromStorage(STORAGE_KEY);

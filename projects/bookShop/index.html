@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body onload="onInit()">
+    <div class="main-container">
+      <h2>Welcome to</h2>
+      <h1 class="shop-name">SHOP SHOP SHOP</h1>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th class="sort-header" onclick="onSortByKey('TITLE')">Title</th>
+              <th class="sort-header" onclick="onSortByKey('PRICE')">Price</th>
+              <th colspan="3">Action</th>
+            </tr>
+          </thead>
+          <tbody class="book-list"></tbody>
+        </table>
+      </section>
+      <section>
+        <ul class="pages"></ul>
+      </section>
+      <section class="new-book">
+        <input type="text" name="book-name" placeholder="Book Name" />
+        <input type="number" name="book-price" placeholder="Price" />
+        <br />
+        <button onClick="onAddBook()">Create new book</button>
+      </section>
+      <section class="book-details hidden">
+        <img class="img-details" src="img/dune.png" onerror="imageNotExist(this)" />
+        <p></p>
+        <div class="rate">
+          <button class="rate-btn" onClick="onUpdateRate(-1)">-</button>
+          <div><span class="rate-value">9</span></div>
+          <button class="rate-btn" onClick="onUpdateRate(1)">+</button>
+        </div>
+        <button onclick="onExitRead()">close</button>
+      </section>
+    </div>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/books.services.js"></script>
+    <script src="js/book.controller.js"></script>
+  </body>
+</html>

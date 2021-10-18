@@ -26,22 +26,38 @@
     <link href="css/ca-gallery.css" rel="stylesheet" />
   </head>
 
-  <body id="page-top">
+  <body id="page-top ">
     <div class="offcanvas-btn" onclick="openCanvas()">
       <i class="fa fa-comment" aria-hidden="true"></i>
     </div>
-    <aside class="offcanvas-aside">
-      <a href="./projects/touchTheNums/index.html"></a>
-      <!-- Contact -->
-      <section>
-        <h4>Contact Me</h4>
-      </section>
+    <aside class="offcanvas-aside bg-primary text-light">
+      <form>
+        <div class="form-group">
+          <label for="InputEmail">Your Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="InputEmail"
+            aria-describedby="emailHelp"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="Subject">Subject</label>
+          <input type="password" class="form-control" id="Subject" placeholder="Your Subject here" />
+        </div>
+        <div class="form-group">
+          <label for="TextArea">Subject</label>
+          <textarea class="form-control" id="TextArea" rows="8" placeholder="Type message text here"></textarea>
+        </div>
+        <button type="button" class="btn-sm btn-dark">Submit</button>
+      </form>
     </aside>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Osher Cappelli</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><u>Osher Cappelli</u></a>
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -55,7 +71,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item text-primary">
               <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
             </li>
             <li class="nav-item">
@@ -76,16 +92,16 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Welcome To my</div>
-          <div class="intro-heading">Projects Page</div>
+          <div class="intro-lead-in text-primary">Welcome To my</div>
+          <div class="intro-heading text-primary">Projects Page</div>
           <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
         </div>
       </div>
     </header>
 
     <!-- Services -->
-    <a name="services"></a>
-    <section>
+    <a name="services "></a>
+    <section class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -132,7 +148,7 @@
     </section>
 
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <section class="bg-secondary" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -147,88 +163,60 @@
     </section>
 
     <!-- Me -->
-    <section class="bg-light" id="me" style="padding: 0px">
+    <section class="bg-secondary" id="me" style="padding: 0px">
       <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="" />
-            <h4>Larry Parker</h4>
-            <p class="text-muted">Lead Marketer</p>
-            <ul class="list-inline social-buttons">
+            <img class="mx-auto rounded-circle" src="img/osher-cappelli.jpg" alt="" />
+            <h4>Osher Cappelli</h4>
+            <p>Human</p>
+            <ul class="list-inline social-buttons flex-align-center mt-2">
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/osher-cappelli-289a7b11a" target="_blank">
                   <i class="fa fa-linkedin"></i>
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-sm-8 flex-align-center">
+        <div class="col-sm-6 flex-align-center">
+          <p class="large about-description">
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blop
+          </p>
+        </div>
+        <div class="col-sm-6 flex-align-center">
           <p class="large text-muted about-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad
-            perspiciatis, totam corporis ea, alias ut unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact">
-      <div class="container">
+    <footer class="bg-dark" id="contact">
+      <!-- <div class="container">
         <div class="row">
           <div class="col-md-4 flex-align-center">
             <a href="http://coding-academy.org" target="_blank">
               <img src="./img/ca-logo.png" alt="" />
             </a>
           </div>
-          <div class="col-md-4 flex-align-center">
-            <ul class="list-inline social-buttons flex-align-center">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item flex-align-center">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 flex-align-center">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">More Me</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Even More</a>
-              </li>
-            </ul>
-          </div>
+          <div class="col-md-4 flex-align-center"></div>
+          <div class="col-md-4 flex-align-center"></div>
         </div>
-      </div>
+      </div> -->
     </footer>
 
     <!-- Portfolio Modal -->
     <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content bg-dark text-light">
           <div class="close-modal" data-dismiss="modal">
             <div class="lr">
               <div class="rl"></div>
@@ -259,7 +247,6 @@
     <script src="js/ca-gallery.js"></script>
     <script src="js/offCanvas.js"></script>
     <script src="js/services/util-service.js"></script>
-    <script src="js/services/storage.service.js"></script>
     <script src="js/services/project.service.js"></script>
     <script src="js/main.js"></script>
   </body>

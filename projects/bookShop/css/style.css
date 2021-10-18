@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body {
+  text-align: center;
+}
+
+.main-container {
+  position: relative;
+  padding: 10px 0px;
+  margin-top: 50px;
+  background-color: hsl(210, 44%, 73%);
+  display: inline-block;
+  border-radius: 20px;
+  width: 600px;
+  box-shadow: 1px 1px 10px black;
+}
+
+.shop-name {
+  animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: hsl(0, 100%, 44%);
+    text-decoration: underline;
+  }
+  25% {
+    color: hsl(180, 100%, 44%);
+    text-decoration: overline;
+  }
+  50% {
+    color: hsl(90, 100%, 44%);
+    text-decoration: overline;
+  }
+  50% {
+    color: hsl(20, 100%, 44%);
+    text-decoration: line-through;
+  }
+  100% {
+    color: hsl(255, 100%, 44%);
+    text-decoration: underline;
+  }
+}
+
+.main-container table thead {
+  border-radius: 10px;
+}
+
+.sort-header:hover {
+  background-color: hsl(25, 75%, 67%);
+  cursor: pointer;
+}
+
+.main-container table {
+  display: inline-block;
+  background-color: lightyellow;
+  border-collapse: collapse;
+  box-shadow: 5px 5px 10px black;
+}
+.main-container table th {
+  background-color: wheat;
+}
+
+.book-list {
+  margin: auto;
+  margin-top: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: hsl(39, 87%, 76%);
+}
+
+.book-list td {
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.book-list tr:hover {
+  /* background-color: tomato; */
+  box-shadow: 10px 0px 2px tomato;
+}
+
+button {
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 1px black solid;
+  box-shadow: 1px 1px 2px black;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 1px 1px 4px black;
+}
+
+button:active {
+  box-shadow: 1px 1px 4px white;
+}
+
+.read-btn {
+  background-color: hsl(128, 71%, 80%);
+}
+
+.update-btn {
+  background-color: rgb(240, 166, 240);
+}
+
+.delete-btn {
+  background-color: hsl(4, 71%, 80%);
+}
+.book-details {
+  background-color: hsl(210, 44%, 53%);
+  padding: 20px 0;
+  position: absolute;
+  width: 600px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px black;
+  animation: pop-up;
+  animation-duration: 0.5s;
+}
+
+.img-details {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.book-details p {
+  background-color: hsl(200, 44%, 73%);
+  display: inline-block;
+  width: 490px;
+  padding: 20px;
+  margin: 0;
+  margin-bottom: 5px;
+  border-radius: 20px;
+}
+
+.rate {
+  display: flex;
+  background-color: hsl(250, 44%, 73%);
+  width: fit-content;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.rate-btn {
+  background-color: hsl(270, 64%, 73%);
+  width: 40px;
+  height: 25px;
+  cursor: pointer;
+  line-height: 14px;
+}
+
+.rate-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  margin: 0 0;
+}
+
+.pages {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.new-book input {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes pop-up {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

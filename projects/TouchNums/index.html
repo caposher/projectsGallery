@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Touch numbers</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body onload="init()">
+    <h1 class="game-title">Touch the Numbers</h1>
+    <div class="board-block">
+      <h4 class="timer">00:000</h4>
+      <label> <input type="radio" name="difficult" value="4" onclick="restartGame(this)" />Easy</label>
+      <label> <input type="radio" name="difficult" value="5" onclick="restartGame(this)" />Hard</label>
+      <label> <input type="radio" name="difficult" value="6" onclick="restartGame(this)" />Extrime</label><br />
+      <button onclick="restartGame()">Restart/Shuffle</button>
+
+      <!-- <table border="1" cellpadding="15" class="board-wrapper"> -->
+      <table class="board-wrapper">
+        <tbody class="board"></tbody>
+      </table>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

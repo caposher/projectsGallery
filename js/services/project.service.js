@@ -60,7 +60,7 @@ function _createProjects() {
 }
 
 function _createProject(
-  name = 'Unknown',
+  name = 'unknown',
   title = 'Unknown',
   desc = '',
   url = '#',

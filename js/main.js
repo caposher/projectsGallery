@@ -46,9 +46,7 @@ function renderProjModals(proj) {
                     <li>Category: ${proj.category}</li>
                     <li>${renderBadges(proj)}</li>
                   </ul>
-                  <button class="tryIt tryIt-${proj.id} btn btn-info px-4 mb-1" type="button">
-                    Let's try it!
-                  </button>
+                  <a class="btn btn-info px-4 mb-1" href="${proj.url}" target="_blank">Let's try it!</a>
                   </br>
                   <button class="btn btn-secondary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>

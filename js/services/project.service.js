@@ -18,7 +18,7 @@ function _createProjects() {
       'touchNums',
       'Touch The Numbers',
       `Touch the numbers as fast as you can, and become a world record holder!."Touch the Numbers" is a simple game for training your reflexes and peripheral vision.Peripheral vision is an essential skill for playing baseball, football, basketball, and various sports.`,
-      '../projects/touchNums/index.html',
+      'https://caposher.github.io/TouchNums/',
       ['Mouse', 'Coding Academy', 'On Develop'],
       'Game'
     ),
@@ -26,7 +26,7 @@ function _createProjects() {
       'InPicture',
       'Guess the picture',
       `In Picture can be used for any topic and provide opportunities for prediction and discussion. Try to guess the name of the animal while learning about them`,
-      '../projects/InPicture/index.html',
+      'https://caposher.github.io/InPicture/',
       ['Mouse', 'Coding Academy', 'On Develop'],
       'Game'
     ),
@@ -35,7 +35,7 @@ function _createProjects() {
       'PAC-MAN',
       `Master the maze, beat the cats, get your initials by the high score! Stay alert, move quick, and be smart. 
       Gulp down power pellets and suck the cats for extra points in this collaborative and competitive game.`,
-      '../projects/InPicture/index.html',
+      'https://caposher.github.io/Pacman/',
       ['Keyboard', 'Coding Academy', 'On Develop'],
       'Game'
     ),
@@ -43,7 +43,7 @@ function _createProjects() {
       'mineSweeper',
       'Mine Blowing!',
       `Minesweeper rules are very simple. The board is divided into cells, with mines randomly distributed. To win, you need to open all the cells. The number on a cell shows the number of mines adjacent to it. Using this information, you can determine cells that are safe, and cells that contain mines. Cells suspected of being mines can be marked with a flag using the right mouse button.`,
-      '../projects/mineSweeper/index.html',
+      'https://caposher.github.io/Minesweeper/',
       ['Mouse', 'Coding Academy', 'Sprint'],
       'Game'
     ),
@@ -51,7 +51,7 @@ function _createProjects() {
       'bookShop',
       'Manage your Shop',
       `Manage your bookstore by adding books, prices, photos and more.`,
-      '../projects/bookShop/index.html',
+      'https://caposher.github.io/bookshop/',
       ['Mouse', 'Coding Academy'],
       'Business tool'
     ),
